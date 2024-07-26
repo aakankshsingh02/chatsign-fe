@@ -3,7 +3,7 @@
 }
 
 body {
-  background: linear-gradient(45deg, #FC466B, #0101cc);
+  background: linear-gradient(134deg,#0101cc, #64b8f4 );
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -94,7 +94,7 @@ button {
   width: 150px;
   padding: 8px;
   margin-bottom: 1em;
-  margin-top: 1em;
+  margin-top: 0em;
   border: none;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -262,6 +262,40 @@ button:focus {
     top: -20px;
   }
 
+   .password-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .password-container input {
+    width: 100%;
+  }
+
+  .toggle-password {
+    position: relative;
+    right: 0;
+    top: 1.8rem;
+  }
+
+  .error-message {
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    position: relative;
+    left: 0;
+  }
+
+  .input-container {
+    margin-bottom: 1rem;
+  }
+
+  .password-checklist {
+    font-size: 0.75rem;
+  }
+
+  .password-checklist li {
+    margin: 0.2rem 0;
+  }
+
   
 }
 
@@ -301,5 +335,116 @@ button:focus {
     top: -40px;
   }
 
+  .password-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .password-container input {
+    width: 100%;
+  }
+
+  .toggle-password {
+    position: relative;
+    right: 0;
+    top: 1.8rem;
+  }
+
+  .error-message {
+    font-size: 0.6rem;
+    margin-top: 0.4rem;
+    position: relative;
+    left: 0;
+  }
+
+  .input-container {
+    margin-bottom: 0.8rem;
+  }
+
+  .password-checklist {
+    font-size: 0.75rem;
+  }
+
+  .password-checklist li {
+    margin: 0.1rem 0;
+  }
+
   
+}
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  flex: 1;
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  
+}
+
+.toggle-password:focus {
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.6rem;
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: 4;
+  left: 0;
+  width: 100%;
+  visibility: visible;
+  min-height: 2em; /* Ensures space is always reserved */
+}
+.input-container {
+  position: relative;
+  margin-bottom: 1.2rem; /* Adjust as necessary for spacing */
+}
+.password-checklist {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.password-checklist ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.password-checklist li {
+  margin: 0.25rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.password-checklist li .fa-check-circle {
+  color: green;
+}
+
+.password-checklist li .fa-times-circle {
+  color: red;
+}
+
+.valid {
+  color: green;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.toggle-password {
+  cursor: pointer;
+  margin-left: 0.5rem;
 }
