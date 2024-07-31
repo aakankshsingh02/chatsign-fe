@@ -109,7 +109,7 @@ const LoginPage: React.FC = () => {
       <div className="drop drop-4"></div>
       <form onSubmit={handleSubmit}>
         <h2 className="text-white text-2xl font-bold text-center font-serif mb-2">
-          ChartSign
+          Chartsign
         </h2>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <div className="input-container">
@@ -200,7 +200,10 @@ const LoginPage: React.FC = () => {
         <br />
         <button type="submit">Sign In</button>
         <div className="text-center">
-          <Link href="/forgot-password" className="text-blue-100 hover:underline text-sm">
+          <Link
+            href="/forgot-password"
+            className="text-blue-100 hover:underline text-sm"
+          >
             Forgot Password?
           </Link>
         </div>

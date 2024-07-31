@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>ChartSign</title>
+        <title>Chartsign</title>
       </Head>
       <LoginPage />
     </div>
