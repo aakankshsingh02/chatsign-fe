@@ -103,9 +103,9 @@ const LoginPage: React.FC = () => {
 
   return (
     <div className="container">
-      <div className="drop drop-1"></div>
+      {/* <div className="drop drop-1"></div>
       <div className="drop drop-2"></div>
-      <div className="drop drop-3"></div>
+      <div className="drop drop-3"></div> */}
       <div className="drop drop-4"></div>
       <form onSubmit={handleSubmit}>
         <h2 className="text-white text-2xl font-bold text-center font-serif mb-2">
